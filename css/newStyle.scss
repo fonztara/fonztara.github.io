@@ -3,8 +3,8 @@
   --accent: #ff5100;
   --text: #ffffff;
   --muted: #cfcfcf;
-  --light: #202020;
-  --font: "Segoe UI", "Helvetica Neue", sans-serif;
+  --light: #0b0b0b;
+  --taviraj: Taviraj, serif;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: var(--font);
+  font-family: var(--taviraj);
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -24,8 +24,8 @@ body {
 
 // HERO
 .hero {
-  background: linear-gradient(to right, #161616, #1e1e1e);
-  padding: 3rem 2rem;
+  background: linear-gradient(to top, var(--light), #101010);
+  padding: 2rem;
 
   .hero-content {
     display: flex;
@@ -37,20 +37,28 @@ body {
 
   .hero-img {
     width: auto;
-    height: 200px;
+    height: 150px;
     object-fit: contain;
-    padding-left: 10px;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 
   .hero-text {
     h1 {
       font-size: 2.5rem;
+      line-height: 2.8rem;
       color: var(--accent);
+      margin-bottom: 1rem;
     }
   }
 
   .quote {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
   }
 
@@ -65,13 +73,13 @@ body {
     margin: 1rem auto;
     text-align: justify;
     font-size: 1rem;
+    display: none;
   }
 }
 
 // CONTACT LINKS
 .contact-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.75rem;
   margin-top: 1rem;
   text-align: center;
@@ -79,6 +87,16 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 957px) {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 1rem;
+  }
 
   a {
     text-decoration: none;
@@ -127,8 +145,38 @@ body {
 }
 
 // SKILLS
+.skill-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--muted);
+    border-radius: 10px;
+  }
+}
+
 .skill-subsection {
-  margin-top: 1rem;
+  flex: 0 0 85%;
+  scroll-snap-align: center;
+  padding: 1rem;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 
   h3 {
     font-size: 1.25rem;
@@ -147,7 +195,7 @@ body {
     padding: 0.2rem 0.5rem;
     border: 1px dashed var(--muted);
     border-radius: 6px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--muted);
     white-space: nowrap;
   }
@@ -163,19 +211,9 @@ body {
     margin-bottom: 0.5rem;
   }
 
-  ul {
-    padding-left: 1.5rem;
-    list-style-type: disc;
-  }
-
   p {
     margin-bottom: 0.75rem;
     text-align: justify;
-
-    strong {
-        font-weight: 600;
-        text-decoration: underline;
-    }
   }
 }
 
@@ -221,7 +259,7 @@ body {
       transition: border-color 0.1s, background-color 0.1s;
 
       &:focus {
-        border-color: #00bfff;
+        border-color: var(--accent);
         background-color: #2a2a2a;
         outline: none;
       }
@@ -230,8 +268,8 @@ body {
     button {
       padding: 0.8rem 1.2rem;
       font-size: 1rem;
-      background-color: #00bfff;
-      color: #121212;
+      background-color: var(--accent);
+      color: var(--text);
       border: none;
       border-radius: 0.5rem;
       cursor: pointer;
@@ -239,7 +277,7 @@ body {
       transition: background-color 0.1s;
 
       &:hover {
-        background-color: #009acc;
+        background-color: #d34300;
       }
     }
   }
@@ -262,12 +300,18 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     .hero-content {
       flex-direction: row;
       text-align: left;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
+      width: 100%;
+      padding: 0 1rem;
+      gap: 1rem;
     }
 
     .hero-text {
@@ -277,8 +321,17 @@ footer {
 
     .hero-img {
       width: auto;
-      height: 300px;
-      padding: 0 25px 0 0;
+      height: 150px;
+      padding: 0 0 0 2rem;
+      margin-bottom: 0;
     }
+  }
+
+  .skill-subsection {
+    flex: 0 0 40%;
+  }
+
+  .skill-scroll-container {
+    scroll-snap-type: x proximity;
   }
 }
