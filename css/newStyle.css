@@ -38,7 +38,6 @@ body {
   height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 0 25px 0 0;
 }
 .hero .hero-text h1 {
   font-size: 2.5rem;
@@ -151,6 +150,10 @@ body {
   margin-bottom: 0.75rem;
   text-align: justify;
 }
+.journey-block p strong {
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 #contact {
   padding: 4rem 2rem;
@@ -240,5 +243,6 @@ footer {
   .hero .hero-img {
     width: auto;
     height: 300px;
+    padding: 0 25px 0 0;
   }
 }/*# sourceMappingURL=newStyle.css.map */

@@ -39,7 +39,6 @@ body {
     width: auto;
     height: 200px;
     object-fit: contain;
-    padding: 0 25px 0 0;
   }
 
   .hero-text {
@@ -171,6 +170,11 @@ body {
   p {
     margin-bottom: 0.75rem;
     text-align: justify;
+
+    strong {
+        font-weight: 600;
+        text-decoration: underline;
+    }
   }
 }
 
@@ -273,6 +277,7 @@ footer {
     .hero-img {
       width: auto;
       height: 300px;
+      padding: 0 25px 0 0;
     }
   }
 }
