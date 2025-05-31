@@ -1,98 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alfonso Tarallo – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header hidden" id="header">
-    <div class="header-content">
-      <div>
-        <img src="alfoShape.png" alt="Alfonso Tarallo" class="header-img" />
-        <h1>Alfonso Tarallo</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfonso Tarallo – Portfolio</title>
+    <link rel="stylesheet" href="css/newStyle.css" />
+  </head>
+  <body>
+    <div class="hero" id="hero">
+      <div class="hero-content">
+        <img
+          src="assets/alfoShape.png"
+          alt="Alfonso Tarallo"
+          class="hero-img"
+        />
+        <div class="hero-text">
+          <h1>Alfonso Tarallo</h1>
+          <p class="quote">
+            <strong>"Innovate, not for money, but for humans."</strong>
+          </p>
+          <p class="tagline">
+            Swift Developer | UX Enthusiast | Curious Lifelong Learner
+          </p>
+          <p class="bio">
+            I'm a Swift developer with a strong design sensibility and a deep
+            appreciation for the Apple ecosystem. I believe in the limitless
+            potential that comes from seamless integration, and I’m passionate
+            about leveraging technology and innovation to create meaningful
+            solutions to real-world problems through code.<br />User Experience
+            is at the core of my work—I’m especially drawn to Accessibility and
+            continually explore new ways to make digital products more
+            intuitive, inclusive, and effortless to use for everyone.
+          </p>
+        </div>
       </div>
-      <div class="contacts">
-        <a href="mailto:fonztara@gmail.com">📧 Email</a>
-        <a href="https://linkedin.com/in/fonztara" target="_blank">💼 LinkedIn</a>
-        <a href="https://github.com/fonztara" target="_blank">🐙 GitHub</a>
-        <a href="https://linktr.ee/fonztara" target="_blank">🌳 Linktree</a>
+      <div class="contact-links">
+        <a href="mailto:fonztara@example.com"><img src="assets/mail.svg" alt=""><span>Email</span></a>
+        <a href="https://linkedin.com/in/fonztara" target="_blank"><img src="assets/linkedin.svg" alt=""><span>LinkedIn</span></a>
+        <a href="https://github.com/fonztara" target="_blank"><img src="assets/github.svg" alt=""><span>GitHub</span></a>
+        <a href="https://linktr.ee/fonztara" target="_blank"><img src="assets/linktree.svg" alt=""><span>Linktree</span></a>
       </div>
     </div>
-  </header>
 
-  <div class="hero" id="hero">
-    <div class="hero-content">
-      <img src="alfoShape.png" alt="Alfonso Tarallo" class="hero-img" />
-      <div class="hero-text">
-        <h1>Alfonso Tarallo</h1>
-        <p class="tagline">Swift Developer | UX Enthusiast | Curious Lifelong Learner</p>
-        <p class="bio">I'm a Swift developer with a strong design sensibility and a deep appreciation for the Apple ecosystem. I believe in the limitless potential that comes from seamless integration, and I’m passionate about leveraging technology and innovation to create meaningful solutions to real-world problems through code.<br>User Experience is at the core of my work—I’m especially drawn to Accessibility and continually explore new ways to make digital products more intuitive, inclusive, and effortless to use for everyone.</p>
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+
+      <div class="skill-subsection">
+        <h3>Tech Skills</h3>
+        <div class="skill-grid">
+          <span>Swift</span><span>iOS</span><span>macOS</span
+          ><span>Accessibility</span><span>Git</span> <span>Bug Fixing</span
+          ><span>Networking</span><span>Concurrency</span> <span>HTML</span
+          ><span>CSS</span><span>JavaScript</span><span>React.js</span>
+        </div>
       </div>
-    </div>
-    <div class="contact-links">
-      <a href="mailto:fonztara@example.com">📧 Email</a>
-      <a href="https://linkedin.com/in/fonztara" target="_blank">💼 LinkedIn</a>
-      <a href="https://github.com/fonztara" target="_blank">🐙 GitHub</a>
-      <a href="https://linktr.ee/fonztara" target="_blank">🌳 Linktree</a>
-    </div>
-  </div>
 
-  <section class="section" id="skills">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SwiftUI</span><span>Accessibility</span>
-      <span>React</span><span>Git & GitHub</span><span>Figma</span><span>Agile</span><span>Leadership</span>
-    </div>
-  </section>
+      <div class="skill-subsection">
+        <h3>Design Skills</h3>
+        <div class="skill-grid">
+          <span>Sketching</span><span>Interactive Prototypes</span
+          ><span>Human Interface Guidelines</span> <span>User Research</span
+          ><span>User Flow Mapping</span>
+        </div>
+      </div>
 
-  <section class="section" id="journey">
-    <h2>My Journey</h2>
+      <div class="skill-subsection">
+        <h3>Tools</h3>
+        <div class="skill-grid">
+          <span>XCode</span><span>App Store Connect</span><span>VSCode</span>
+          <span>Figma</span><span>Airtable</span><span>Illustrator</span
+          ><span>Photoshop</span> <span>Jira</span><span>Confluence</span
+          ><span>Notion</span><span>Miro</span>
+        </div>
+      </div>
 
-    <div class="journey-block">
-      <h3>👋 Introduction</h3>
-      <p>I'm currently studying Business at university, but my curiosity constantly pushes me beyond mere theory—especially toward Technology and Innovation.
-        This drive led me to join the Apple Developer Academy in Naples, first as a Student and now as a Pier, a second-year role focused on hands-on, real-world learning experiences. At the Academy, I discovered a passion for identifying problems and designing thoughtful solutions, technological or otherwise.
-        My goal is not just to find a job that pays the bills, but to build a career that excites me, challenges me, and allows me to create meaningful impact for others.</p>
-    </div>
+      <div class="skill-subsection">
+        <h3>Soft Skills</h3>
+        <div class="skill-grid">
+          <span>Team Working</span><span>Problem Prevention</span
+          ><span>Critical Thinking</span> <span>Design Thinking</span
+          ><span>Public Speaking</span><span>Retrospective</span>
+        </div>
+      </div>
+    </section>
 
-    <div class="journey-block">
-      <h3>🚀 Projects</h3>
-      <p><strong>Tilter</strong> – A Swift package for all developers to enable tilting left and right functionality with gyroscope.</p>
-      <p><strong>Neembo</strong> – An iOS app providing weather feedback to visually impaired users with sound and haptics.</p>
-      <p><strong>sonus</strong> – A keyboard-activated macOS soundboard app, built with Swift and a sense of humor.</p>
-    </div>
+    <section class="section" id="journey">
+      <h2>My Journey</h2>
 
-    <div class="journey-block">
-      <h3>🎓 Education</h3>
-      <p><strong>The Pier at Apple Developer Academy @UNINA Federico II</strong> – Based on real work experience.</p>
-      <p><strong>Apple Developer Academy @UNINA Federico II</strong> – Intensive program on app design, development, and teamwork.</p>
-      <p><strong>Habeetat School</strong> – Full-stack web development for websites and web apps.</p>
-      <p><strong>Business and Management for International Enterprises</strong> – University "Parthenope" of Naples, Italy</p>
-    </div>
-  </section>
+      <div class="journey-block">
+        <h3>👋 Introduction</h3>
+        <p>
+          I'm currently studying Business at university, but my curiosity
+          constantly pushes me beyond mere theory—especially toward Technology
+          and Innovation. This drive led me to join the Apple Developer Academy
+          in Naples, first as a Student and now as a Pier, a second-year role
+          focused on hands-on, real-world learning experiences. At the Academy,
+          I discovered a passion for identifying problems and designing
+          thoughtful solutions, technological or otherwise. My goal is not just
+          to find a job that pays the bills, but to build a career that excites
+          me, challenges me, and allows me to create meaningful impact for
+          others.
+        </p>
+      </div>
 
-  <section class="section" id="contact">
-    <h2>Get in touch</h2>
-    <form action="mailto:fonztara@example.com" method="POST" enctype="text/plain" class="contact-form">
-      <label for="name">Your Full Name</label>
-      <input type="text" id="name" name="name" required />
-  
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required />
-  
-      <label for="message">Your message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-  
-      <button type="submit">Send</button>
-    </form>
-  </section>  
+      <div class="journey-block">
+        <h3>🚀 Projects</h3>
+        <p>
+          <strong>Tilter</strong> – A Swift package for all developers to enable
+          tilting left and right functionality with gyroscope.
+        </p>
+        <p>
+          <strong>Neembo</strong> – An iOS app providing weather feedback to
+          visually impaired users with sound and haptics.
+        </p>
+        <p>
+          <strong>sonus</strong> – A keyboard-activated macOS soundboard app,
+          built with Swift and a sense of humor.
+        </p>
+      </div>
 
-  <footer>
-    <p>Made with 🧡 by Alfonso Tarallo</p>
-  </footer>
+      <div class="journey-block">
+        <h3>🎓 Education</h3>
+        <p>
+          <strong
+            >The Pier at Apple Developer Academy @UNINA Federico II</strong
+          >
+          – Based on real work experience.
+        </p>
+        <p>
+          <strong>Apple Developer Academy @UNINA Federico II</strong> –
+          Intensive program on app design, development, and teamwork.
+        </p>
+        <p>
+          <strong>Habeetat School</strong> – Full-stack web development for
+          websites and web apps.
+        </p>
+        <p>
+          <strong>Business and Management for International Enterprises</strong>
+          – University "Parthenope" of Naples, Italy
+        </p>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section class="section" id="contact">
+      <h2>Get in touch</h2>
+      <form
+        action="mailto:fonztara@example.com"
+        method="POST"
+        enctype="text/plain"
+        class="contact-form"
+      >
+        <label for="name">Your Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Made with 🧡 by Alfonso Tarallo</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
