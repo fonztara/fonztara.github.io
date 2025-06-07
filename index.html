@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fonztara</title>
-    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo16.png" />
+    <link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/logo/logo32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/logo/logo16.png"
+    />
     <link rel="stylesheet" href="css/newStyle.css" />
   </head>
   <body>
     <div class="page-container">
       <header class="header">
         <div class="header-left">
-          <img class="logo" src="assets/logo.svg" alt="" />
+          <img class="logo" src="assets/logo/logo.svg" alt="" />
           <h1>fonztara</h1>
         </div>
 
@@ -59,7 +69,7 @@
         <div class="hero-content">
           <div class="hero-top">
             <img
-              src="assets/alfoSmall.png"
+              src="assets/photos/alfoSmall.png"
               alt="Alfonso Tarallo"
               class="hero-img"
             />
@@ -86,16 +96,18 @@
         </div>
         <div class="contact-links">
           <a href="https://github.com/fonztara" target="_blank"
-            ><img src="assets/github.svg" alt="" /><span>GitHub</span></a
+            ><img src="assets/icons/github.svg" alt="" /><span>GitHub</span></a
           >
           <a href="https://linkedin.com/in/fonztara" target="_blank"
-            ><img src="assets/linkedin.svg" alt="" /><span>LinkedIn</span></a
+            ><img src="assets/icons/linkedin.svg" alt="" /><span
+              >LinkedIn</span
+            ></a
           >
-          <a href="assets/AlfonsoTarallo-CV.pdf" target="_blank"
-            ><img src="assets/cv.svg" alt="" /><span>Curriculum</span></a
+          <a href="assets/documents/AlfonsoTarallo-CV.pdf" target="_blank"
+            ><img src="assets/icons/cv.svg" alt="" /><span>Curriculum</span></a
           >
           <a href="mailto:fonztara@gmail.com"
-            ><img src="assets/mail.svg" alt="" /><span>Email</span></a
+            ><img src="assets/icons/mail.svg" alt="" /><span>Email</span></a
           >
         </div>
       </div>
@@ -135,10 +147,10 @@
           <div class="skill-subsection">
             <h3>Soft Skills</h3>
             <div class="skill-grid">
-              <span>Team Working</span><span>Retrospective</span
-              ><span>Problem Prevention</span><span>Critical Thinking</span>
-              <span>Design Thinking</span><span>Public Speaking</span
-              ><span>Communication</span><span>Mentorship</span>
+              <span>Team Working</span><span>Critical Thinking</span
+              ><span>Problem Prevention</span><span>Public Speaking</span
+              ><span>Communication</span><span>SCRUM</span
+              ><span>Conflict Resolution</span>
             </div>
           </div>
         </div>
@@ -150,35 +162,66 @@
         <div class="journey-block">
           <h3>👋 Introduction</h3>
           <p>
-            I'm currently studying <strong>#business</strong> at university, but
-            my <strong>#curiosity</strong> constantly pushes me beyond mere
-            theory—especially toward <strong>#technology</strong> and
-            <strong>#innovation</strong>. This drive led me to join the Apple
-            Developer Academy in Naples, first as a Student and now as a Pier, a
-            second-year role focused on hands-on, real-world learning
-            experiences. At the Academy, I discovered a passion for identifying
-            problems and designing <strong>#thoughtful</strong> solutions,
-            technological or otherwise. My goal is not just to find a job that
-            pays the bills, but to build a career that excites me, challenges
-            me, and allows me to create meaningful <strong>#impact</strong> for
-            others.
+            I'm currently studying Business at university, but my curiosity
+            constantly pushes me beyond mere theory—especially toward technology
+            and innovation. This drive led me to join the Apple Developer
+            Academy in Naples. I discovered a passion for identifying problems
+            and designing thoughtful solutions, technological or otherwise. My
+            goal is not just to find a job that pays the bills, but to build a
+            career that excites me, challenges me, and allows me to create
+            meaningful impact for others.
           </p>
         </div>
 
         <div class="journey-block" id="projects">
           <h3>🚀 Projects</h3>
-          <p>
-            <strong>Tilter</strong> – A Swift package for all developers to
-            enable tilting left and right functionality with gyroscope.
-          </p>
-          <p>
-            <strong>Neembo</strong> – An iOS app providing weather feedback to
-            visually impaired users with sound and haptics.
-          </p>
-          <p>
-            <strong>sonus</strong> – A keyboard-activated macOS soundboard app,
-            built with Swift and a sense of humor.
-          </p>
+
+          <div class="project-list">
+            <div class="project-card">
+              <div class="card-header">
+                <h4 class="project-name">Tilter</h4>
+                <a href="https://github.com/fonztara/accessibility-tilter"
+                  ><img
+                    class="pinkify"
+                    src="assets/icons/github.svg"
+                    alt="github repo"
+                /></a>
+              </div>
+              <p class="project-description">
+                A Swift package for all developers to enable tilting left and
+                right functionality with gyroscope.
+              </p>
+            </div>
+
+            <div class="project-card">
+              <div class="card-header">
+                <h4 class="project-name">Neembo</h4>
+                <a href="https://apps.apple.com/it/app/neembo/id6502511553"
+                  ><img src="assets/icons/appStore.svg" alt="App Store"
+                /></a>
+              </div>
+              <p class="project-description">
+                An iOS app providing weather feedback to visually impaired users
+                with sound and haptics.
+              </p>
+            </div>
+
+            <div class="project-card">
+              <div class="card-header">
+                <h4 class="project-name">sonus</h4>
+                <a href="https://github.com/fonztara/sonus"
+                  ><img
+                    class="pinkify"
+                    src="assets/icons/github.svg"
+                    alt="github repo"
+                /></a>
+              </div>
+              <p class="project-description">
+                A keyboard-activated macOS soundboard app, built with Swift and
+                a sense of humor.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="journey-block" id="education">
@@ -222,7 +265,7 @@
           <label for="message">Your message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit"><h3>Send</h3></button>
+          <button type="submit"><p>Send</p></button>
         </form>
       </section>
 
