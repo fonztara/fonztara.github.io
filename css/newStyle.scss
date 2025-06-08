@@ -453,6 +453,9 @@ button:hover {
         button {
           background: none;
           border: none;
+          text-decoration: none;
+          color: var(--white);
+          font-weight: bolder;
           padding: 1rem 0.5rem;
           background: var(--pink);
           border-radius: 1rem;
