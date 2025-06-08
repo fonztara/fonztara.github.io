@@ -302,10 +302,10 @@ button:hover {
 }
 .skill-grid span {
   padding: 0.2rem 0.5rem;
-  border: 1px dashed var(--grey);
+  border: 1px dashed var(--black);
   border-radius: 6px;
   font-size: 1rem;
-  color: var(--grey);
+  color: var(--black);
   white-space: nowrap;
 }
 
@@ -338,13 +338,15 @@ button:hover {
 }
 .journey-block#projects .project-list .project-card {
   scroll-snap-align: center;
-  background-color: var(--black);
-  color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: var(--black);
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  min-width: 250px;
-  max-width: 280px;
+  min-width: 200px;
+  max-width: 250px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -368,14 +370,16 @@ button:hover {
   filter: brightness(0) saturate(100%) invert(49%) sepia(25%) saturate(2717%) hue-rotate(298deg) brightness(98%) contrast(86%);
 }
 .journey-block#projects .project-list .project-card .project-description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   word-wrap: break-word;
+  margin-bottom: auto;
+  padding-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .journey-block#projects .project-list .project-card {
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 200px;
+    max-width: 250px;
   }
 }
 
