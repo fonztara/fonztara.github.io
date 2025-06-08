@@ -21,6 +21,13 @@
   </head>
   <body>
     <div class="page-container">
+      <div onclick="hideDetail()" class="project-detail">
+        <div class="project-detail-content">
+          <h2>Detail</h2>
+          <p>Description</p>
+        </div>
+      </div>
+
       <header class="header">
         <div class="header-left">
           <img class="logo" src="assets/logo/logo.svg" alt="" />
@@ -169,7 +176,6 @@
         <h2>My Journey</h2>
 
         <div class="journey-block">
-          <h3>👋 Introduction</h3>
           <p>
             I'm currently studying Business at university, but my curiosity
             constantly pushes me beyond mere theory—especially toward technology
@@ -196,11 +202,11 @@
                     alt="github repo"
                 /></a>
               </div>
-              <p class="project-description">
+              <p class="project-description Tilter">
                 A Swift package for all developers to enable tilting left and
                 right functionality with gyroscope.
               </p>
-              <button>See more</button>
+              <button onclick="showDetail('Tilter')">See more</button>
             </div>
 
             <div class="project-card">
@@ -210,11 +216,11 @@
                   ><img src="assets/icons/appStore.svg" alt="App Store"
                 /></a>
               </div>
-              <p class="project-description">
+              <p class="project-description Neembo">
                 An iOS app providing weather feedback to visually impaired users
                 with sound and haptics.
               </p>
-              <button>See more</button>
+              <button onclick="showDetail('Neembo')">See more</button>
             </div>
 
             <div class="project-card">
@@ -227,11 +233,11 @@
                     alt="github repo"
                 /></a>
               </div>
-              <p class="project-description">
+              <p class="project-description sonus">
                 A keyboard-activated macOS soundboard app, built with Swift and
                 a sense of humor.
               </p>
-              <button>See more</button>
+              <button onclick="showDetail('sonus')">See more</button>
             </div>
           </div>
         </div>
