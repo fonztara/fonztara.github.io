@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   color-scheme: light dark;
   --white: light-dark(#fafafa, #231f20);
@@ -83,9 +84,12 @@ button:hover {
 }
 .header .header-left .logo {
   width: auto;
-  height: 30px;
+  height: 40px;
   -o-object-fit: contain;
      object-fit: contain;
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
 }
 .header .header-left h1 {
   font-size: 1.5rem;
@@ -96,6 +100,15 @@ button:hover {
 }
 .header .header-right button svg {
   color: var(--pink);
+}
+.header .header-right button svg.close {
+  display: none;
+}
+.header .header-right button.isOpen svg.burger {
+  display: none;
+}
+.header .header-right button.isOpen svg.close {
+  display: block;
 }
 .header .header-right ol {
   list-style: none;
@@ -109,6 +122,11 @@ button:hover {
   justify-content: center;
   width: 100%;
   background: var(--white);
+  margin-top: 1.3rem;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  transition: all 0.3s ease;
 }
 .header .header-right ol a {
   color: var(--pink);
@@ -117,9 +135,12 @@ button:hover {
 .header .header-right ol a:hover {
   text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header .header-right ol.hidden {
-    display: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+    transition: all 0.1s ease;
   }
 }
 @media (min-width: 768px) {
@@ -132,6 +153,7 @@ button:hover {
     flex-direction: row;
     padding: 1rem;
     gap: 2rem;
+    margin-top: 0;
   }
 }
 
@@ -168,7 +190,6 @@ button:hover {
   font-size: 2rem;
   line-height: 2.5rem;
   color: var(--orange);
-  margin-bottom: 1rem;
 }
 @media (min-width: 480px) {
   .hero .hero-text h1 {
@@ -251,8 +272,8 @@ button:hover {
 
 .section {
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+  transform: translateY(50px);
+  animation: fadeInUp 0.5s ease forwards;
 }
 
 @keyframes fadeInUp {
@@ -377,7 +398,14 @@ button:hover {
 .journey-block#projects .project-list .project-card .card-header .project-name {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--orange);
+  color: var(--black);
+  text-decoration: underline;
+}
+.journey-block#projects .project-list .project-card .card-header a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .journey-block#projects .project-list .project-card .card-header a img {
   width: 20px;
@@ -394,6 +422,8 @@ button:hover {
   padding-bottom: 2rem;
 }
 .journey-block#projects .project-list .project-card button {
+  display: none;
+  cursor: pointer;
   background: none;
   border: none;
   text-decoration: none;
@@ -402,6 +432,7 @@ button:hover {
   padding: 1rem 0.5rem;
   background: var(--pink);
   border-radius: 1rem;
+  font-size: 1rem;
 }
 .journey-block#projects .project-list .project-card button:hover {
   text-decoration: underline;
@@ -413,6 +444,8 @@ button:hover {
 .project-detail.showing {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 1000;
   top: 50%;
@@ -420,18 +453,63 @@ button:hover {
   width: 100%;
   height: 100%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
 }
 .project-detail.showing .project-detail-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 50%;
   padding: 20%;
+  background: var(--black);
+}
+.project-detail.showing .project-detail-content h2 {
+  color: red;
+}
+.project-detail.showing .project-detail-content p {
+  color: green;
+}
+.project-detail.showing .project-detail-content img {
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#experience {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  #experience {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+#experience div.education,
+#experience div.volunteering {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+#experience div.education h4,
+#experience div.volunteering h4 {
+  font-size: 1.1rem;
+  text-wrap: nowrap;
+}
+#experience div.education h4::before,
+#experience div.volunteering h4::before {
+  content: "• ";
+}
+#experience div.education span,
+#experience div.volunteering span {
+  font-size: 0.9rem;
+  color: var(--grey);
 }
 
 #contact {

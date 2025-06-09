@@ -23,8 +23,9 @@
     <div class="page-container">
       <div onclick="hideDetail()" class="project-detail">
         <div class="project-detail-content">
-          <h2>Detail</h2>
+          <h2>Project</h2>
           <p>Description</p>
+          <img src="assets/photos/alfoSmall.png" alt="" />
         </div>
       </div>
 
@@ -35,8 +36,9 @@
         </div>
 
         <div class="header-right">
-          <button onclick="showMenu()">
+          <button class="" onclick="toggleMenu()">
             <svg
+              class="burger"
               width="30px"
               height="30px"
               viewBox="0 0 24 24"
@@ -62,6 +64,19 @@
                 stroke-linecap="round"
               />
             </svg>
+            <svg
+              class="close"
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                fill="currentColor"
+              />
+            </svg>
           </button>
           <ol class="hidden">
             <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
@@ -85,9 +100,7 @@
               <p class="quote">
                 <strong>Innovate responsibly. Innovate for humans.</strong>
               </p>
-              <p class="tagline">
-                Swift Developer | UX Enthusiast | Curious Lifelong Learner
-              </p>
+              <p class="tagline">Developer | Marketing | UX Enthusiast</p>
             </div>
           </div>
           <p class="bio">
@@ -203,8 +216,9 @@
                 /></a>
               </div>
               <p class="project-description Tilter">
-                A Swift package for all developers to enable tilting left and
-                right functionality with gyroscope.
+                A Swift package that uses CoreMotion gyroscope data to enable
+                your app to change values, dates and more by tilting the iPhone
+                left or right.
               </p>
               <button onclick="showDetail('Tilter')">See more</button>
             </div>
@@ -213,12 +227,16 @@
               <div class="card-header">
                 <h4 class="project-name">Neembo</h4>
                 <a href="https://apps.apple.com/it/app/neembo/id6502511553"
-                  ><img src="assets/icons/appStore.svg" alt="App Store"
+                  ><img
+                    class="pinkify"
+                    src="assets/icons/appStore.svg"
+                    alt="App Store"
                 /></a>
               </div>
               <p class="project-description Neembo">
-                An iOS app providing weather feedback to visually impaired users
-                with sound and haptics.
+                An iOS app that uses a Machine Learning Model to analyze the
+                camera input to provide real-time weather updates users with
+                visual impairments.
               </p>
               <button onclick="showDetail('Neembo')">See more</button>
             </div>
@@ -234,36 +252,96 @@
                 /></a>
               </div>
               <p class="project-description sonus">
-                A keyboard-activated macOS soundboard app, built with Swift and
-                a sense of humor.
+                A shortcut based macOS soundboard, to quickly access your
+                favorite sounds. Record or import audio clips to build your
+                personal soundboard, and be ready for any occasion.
               </p>
               <button onclick="showDetail('sonus')">See more</button>
             </div>
           </div>
         </div>
 
-        <div class="journey-block" id="education">
-          <h3>🎓 Education</h3>
-          <p>
-            <strong
-              >The Pier at Apple Developer Academy @UNINA Federico II</strong
-            >
-            – Based on real work experience.
-          </p>
-          <p>
-            <strong>Apple Developer Academy @UNINA Federico II</strong> –
-            Intensive program on app design, development, and teamwork.
-          </p>
-          <p>
-            <strong>Habeetat School</strong> – Full-stack web development for
-            websites and web apps.
-          </p>
-          <p>
-            <strong
-              >Business and Management for International Enterprises</strong
-            >
-            – University "Parthenope" of Naples, Italy
-          </p>
+        <div class="journey-block" id="experience">
+          <div class="education">
+            <h3>Education</h3>
+            <div class="experience-block">
+              <h4>iOS and macOS Developer (2024-25)</h4>
+              <span
+                >Apple Developer Academy @UNINA Federico II</span
+              >
+              <p>
+                Advanced learning experience based on a real work environment,
+                applying SCRUM and Agile methodologies. I was part of a team
+                working on two live products used everyday and successfully
+                developed frontend, backend and administrative software for the
+                badging system and a macOS self-assessment tool for students.
+              </p>
+            </div>
+            <div class="experience-block">
+              <h4>iOS Developer (2023-24)</h4>
+              <span>Apple Developer Academy @UNINA Federico II</span>
+              <p>
+                I worked on many different projects, with the role of App
+                Developer, but collaborating in the phases of research, UX/UI
+                design, and distribution as well, following the Challenge Based
+                Learning process.
+              </p>
+            </div>
+            <div class="experience-block">
+              <h4>Web Developer (2023)</h4>
+              <span>Habeetat School @weBeetle, Angri (SA)</span>
+              <p>
+                Full-stack development of websites and web applications. I
+                developed frontend and backend of a web based task manager.
+              </p>
+            </div>
+            <div class="experience-block">
+              <h4>Business University (2020-now)</h4>
+              <span>University "Parthenope" of Naples, Italy</span>
+              <p>
+                "Marketing and Management for International Enterprises".
+                Inclined towards Research and Development for Innovation.
+              </p>
+            </div>
+          </div>
+
+          <div class="volunteering">
+            <h3>Volunteering</h3>
+            <div class="experience-block">
+              <h4>Mentor for App Development (2024-25)</h4>
+              <span>Apple Foundation Program @UNINA Federico II</span>
+              <p>
+                I supported teams in app development and presentation skills,
+                facilitating them and helping them empower autonomous learning.
+              </p>
+            </div>
+            <div class="experience-block">
+              <h4>Community Management Support (2024-now)</h4>
+              <span>Apple Developer Academy @UNINA Federico II</span>
+              <p>
+                I supported the Alumni Program in community engagement,
+                collaborating in the organization of networking events and much
+                more.
+              </p>
+            </div>
+            <div class="experience-block">
+              <h4>Educator for youth members (2019-now)</h4>
+              <span>Sant’Antonio Abate (NA)</span>
+              <p>
+                I am coaching teenagers, helping them build empathy, trust and
+                emotional intelligence, giving them the ability to collaborate.
+              </p>
+            </div>
+            <div class="experience-block">
+              <h4>After-school tutor (2016-17)</h4>
+              <span>Castellammare di Stabia (NA)</span>
+              <p>
+                I tutored young people in tough life conditions. I was able to
+                gain their trust and help them believe in their worth and
+                succeed in school.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
