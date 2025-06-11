@@ -378,8 +378,6 @@ button:hover {
 
 // JOURNEY
 .journey-block {
-  margin-bottom: 2rem;
-
   h3 {
     font-size: 1.4rem;
     color: var(--orange);
@@ -422,10 +420,10 @@ button:hover {
       }
 
       .project-card {
+        background: var(--pink);
         scroll-snap-align: center;
         border: 1px solid var(--grey);
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         color: var(--black);
         border-radius: 1rem;
         padding: 1rem;
@@ -450,52 +448,47 @@ button:hover {
           .project-name {
             font-size: 1.1rem;
             font-weight: bold;
-            color: var(--black);
+            color: light-dark(var(--black), var(--white));
             text-decoration: underline;
-          }
-
-          a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            img {
-              width: 20px;
-              height: 20px;
-
-              &.pinkify {
-                filter: brightness(0) saturate(100%) invert(49%) sepia(25%)
-                  saturate(2717%) hue-rotate(298deg) brightness(98%)
-                  contrast(86%);
-              }
-            }
           }
         }
 
         .project-description {
           font-size: 1rem;
+          color: light-dark(var(--black), var(--white));
           text-align: justify;
           word-wrap: break-word;
           margin-bottom: auto;
           padding-bottom: 2rem;
         }
 
-        button {
-          display: none;
+        .project-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           cursor: pointer;
-          background: none;
+          background: var(--black);
           border: none;
           text-decoration: none;
-          color: var(--white);
+          color: var(--pink);
           font-weight: bolder;
           padding: 1rem 0.5rem;
-          background: var(--pink);
           border-radius: 1rem;
           font-size: 1rem;
+          gap: 1rem;
 
           &:hover {
             text-decoration: underline;
+          }
+
+          img {
+            width: 25px;
+            height: 25px;
+
+            &.pinkify {
+              filter: brightness(0) saturate(100%) invert(49%) sepia(25%)
+                saturate(2717%) hue-rotate(298deg) brightness(98%) contrast(86%);
+            }
           }
         }
       }
@@ -581,6 +574,8 @@ button:hover {
       font-size: 0.9rem;
       color: var(--grey);
     }
+
+    display: none;
   }
 }
 

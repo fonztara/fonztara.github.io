@@ -332,9 +332,6 @@ button:hover {
   white-space: nowrap;
 }
 
-.journey-block {
-  margin-bottom: 2rem;
-}
 .journey-block h3 {
   font-size: 1.4rem;
   color: var(--orange);
@@ -369,10 +366,10 @@ button:hover {
   border-radius: 10px;
 }
 .journey-block#projects .project-list .project-card {
+  background: var(--pink);
   scroll-snap-align: center;
   border: 1px solid var(--grey);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   color: var(--black);
   border-radius: 1rem;
   padding: 1rem;
@@ -398,44 +395,41 @@ button:hover {
 .journey-block#projects .project-list .project-card .card-header .project-name {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--black);
+  color: light-dark(var(--black), var(--white));
   text-decoration: underline;
-}
-.journey-block#projects .project-list .project-card .card-header a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.journey-block#projects .project-list .project-card .card-header a img {
-  width: 20px;
-  height: 20px;
-}
-.journey-block#projects .project-list .project-card .card-header a img.pinkify {
-  filter: brightness(0) saturate(100%) invert(49%) sepia(25%) saturate(2717%) hue-rotate(298deg) brightness(98%) contrast(86%);
 }
 .journey-block#projects .project-list .project-card .project-description {
   font-size: 1rem;
+  color: light-dark(var(--black), var(--white));
   text-align: justify;
   word-wrap: break-word;
   margin-bottom: auto;
   padding-bottom: 2rem;
 }
-.journey-block#projects .project-list .project-card button {
-  display: none;
+.journey-block#projects .project-list .project-card .project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  background: none;
+  background: var(--black);
   border: none;
   text-decoration: none;
-  color: var(--white);
+  color: var(--pink);
   font-weight: bolder;
   padding: 1rem 0.5rem;
-  background: var(--pink);
   border-radius: 1rem;
   font-size: 1rem;
+  gap: 1rem;
 }
-.journey-block#projects .project-list .project-card button:hover {
+.journey-block#projects .project-list .project-card .project-link:hover {
   text-decoration: underline;
+}
+.journey-block#projects .project-list .project-card .project-link img {
+  width: 25px;
+  height: 25px;
+}
+.journey-block#projects .project-list .project-card .project-link img.pinkify {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(25%) saturate(2717%) hue-rotate(298deg) brightness(98%) contrast(86%);
 }
 
 .project-detail {
@@ -496,6 +490,7 @@ button:hover {
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
+  display: none;
 }
 #experience div.education h4,
 #experience div.volunteering h4 {
