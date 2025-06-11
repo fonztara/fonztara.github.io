@@ -335,14 +335,18 @@ button:hover {
 .journey-block h3 {
   font-size: 1.4rem;
   color: var(--orange);
-  margin-bottom: 0.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid var(--pink);
+  padding-left: 0.5rem;
 }
 .journey-block p {
   margin-bottom: 0.75rem;
   text-align: justify;
 }
 .journey-block#projects h3 {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: var(--black);
 }
 .journey-block#projects .project-list {
   display: flex;
@@ -411,7 +415,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: var(--black);
+  background: light-dark(var(--black), var(--white));
   border: none;
   text-decoration: none;
   color: var(--pink);
