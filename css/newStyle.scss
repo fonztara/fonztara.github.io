@@ -431,11 +431,11 @@ button:hover {
       }
 
       .project-card {
-        background: var(--pink);
+        background: var(--darkPink);
         scroll-snap-align: center;
         border: 1px solid var(--grey);
         border-radius: 8px;
-        color: var(--black);
+        color: var(--white);
         border-radius: 1rem;
         padding: 1rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -461,21 +461,22 @@ button:hover {
           gap: 1rem;
 
           .project-name {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: bolder;
-            color: light-dark(var(--black), var(--white));
+            color: var(--white);
+            margin-bottom: 0.5rem;
           }
 
           span {
             font-size: 1.1rem;
             font-weight: bold;
-            color: light-dark(var(--black), var(--white));
+            color: var(--white);
           }
         }
 
         .project-description {
           font-size: 1rem;
-          color: light-dark(var(--black), var(--white));
+          color: var(--white);
           text-align: justify;
           word-wrap: break-word;
           margin-bottom: auto;
@@ -487,10 +488,10 @@ button:hover {
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          background: light-dark(var(--black), var(--white));
+          background: var(--white);
           border: none;
           text-decoration: none;
-          color: var(--pink);
+          color: var(--black);
           font-weight: bolder;
           padding: 1rem 0.5rem;
           border-radius: 1rem;
