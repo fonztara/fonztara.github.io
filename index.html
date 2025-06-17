@@ -25,15 +25,18 @@
         <div class="project-detail-content">
           <h2>Project</h2>
           <p>Description</p>
-          <img src="assets/photos/alfoSmall.png" alt="" />
+          <div class="gallery">
+          </div>
         </div>
       </div>
 
-      <header class="header">
-        <div class="header-left">
-          <img class="logo" src="assets/logo/logo.svg" alt="" />
-          <h1>fonztara</h1>
-        </div>
+      <nav class="header">
+        <a href="#">
+          <div class="header-left">
+            <img class="logo" src="assets/logo/logo.svg" alt="" />
+            <h1>fonztara</h1>
+          </div>
+        </a>
 
         <div class="header-right">
           <button class="" onclick="toggleMenu()">
@@ -86,7 +89,7 @@
             <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
           </ol>
         </div>
-      </header>
+      </nav>
       <div class="hero" id="hero">
         <div class="hero-content">
           <div class="hero-top">
@@ -151,47 +154,56 @@
 
           <div class="project-list">
             <div class="project-card">
-              <div class="card-header">
+              <button class="card-header">
                 <h4 class="project-name">Tilter</h4>
-              </div>
+                <!-- <span>❯</span> -->
+              </button>
               <p class="project-description Tilter">
-                A Swift package that uses CoreMotion gyroscope data to enable
+                A Swift package for iOS developers that uses CoreMotion gyroscope data to enable
                 your app to change values, dates and more by tilting the iPhone
                 left or right.
               </p>
-              <a class="project-link" href="https://github.com/fonztara/accessibility-tilter">
+              <a
+                class="project-link"
+                href="https://github.com/fonztara/accessibility-tilter"
+              >
                 <img
-                    class="pinkify"
-                    src="assets/icons/github.svg"
-                    alt="github repo"
+                  class="pinkify"
+                  src="assets/icons/github.svg"
+                  alt="github repo"
                 />
                 <span>Github</span>
               </a>
             </div>
 
             <div class="project-card">
-              <div class="card-header">
+              <button class="card-header">
                 <h4 class="project-name">Neembo</h4>
-              </div>
+                <!-- <span>❯</span> -->
+              </button>
               <p class="project-description Neembo">
-                An iOS app that uses a Machine Learning Model to analyze the
-                camera input to provide real-time weather updates users with
+                An iOS app that uses two Machine Learning Models to analyze the
+                camera input in order to provide real-time weather updates to users with
                 visual impairments.
               </p>
-              <a class="project-link" href="https://apps.apple.com/it/app/neembo/id6502511553">
+              <a
+                class="project-link"
+                href="https://apps.apple.com/it/app/neembo/id6502511553"
+              >
                 <img
-                    class="pinkify"
-                    src="assets/icons/appStore.svg"
-                    alt="App Store"
+                  class="pinkify"
+                  src="assets/icons/appStore.svg"
+                  alt="App Store"
                 />
                 <span>App Store</span>
               </a>
             </div>
 
             <div class="project-card">
-              <div class="card-header">
+              <button class="card-header">
                 <h4 class="project-name">sonus</h4>
-              </div>
+                <!-- <span>❯</span> -->
+              </button>
               <p class="project-description sonus">
                 A shortcut based macOS soundboard, to quickly access your
                 favorite sounds. Record or import audio clips to build your
@@ -199,9 +211,9 @@
               </p>
               <a class="project-link" href="https://github.com/fonztara/sonus">
                 <img
-                    class="pinkify"
-                    src="assets/icons/github.svg"
-                    alt="github repo"
+                  class="pinkify"
+                  src="assets/icons/github.svg"
+                  alt="github repo"
                 />
                 <span>Github</span>
               </a>
